@@ -21,7 +21,7 @@ function(morpheus_utils_configure_hwloc)
   list(APPEND CMAKE_MESSAGE_CONTEXT "hwloc")
 
   morpheus_utils_assert_cpm_initialized()
-  set(HWLOC_VERSION "2.5" CACHE STRING "Version of hwloc to use")
+  set(HWLOC_VERSION "2.5.0" CACHE STRING "Version of hwloc to use")
 
   set(oneValueArgs VERSION PINNED_TAG)
   cmake_parse_arguments(PKG "${options}" "${oneValueArgs}"

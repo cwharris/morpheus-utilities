@@ -21,7 +21,7 @@ function(morpheus_utils_configure_ucx)
   list(APPEND CMAKE_MESSAGE_CONTEXT "ucx")
 
   morpheus_utils_assert_cpm_initialized()
-  set(UCX_VERSION "1.13" CACHE STRING "Version of ucx to use")
+  set(UCX_VERSION "1.13.0" CACHE STRING "Version of ucx to use")
 
   # Try to find UCX and download from source if not found
   rapids_cpm_find(ucx ${UCX_VERSION}

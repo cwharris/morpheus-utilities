@@ -61,7 +61,11 @@ function(morpheus_utils_configure_boost)
 
   rapids_cpm_find(Boost ${BOOST_VERSION}
     GLOBAL_TARGETS
-      Boost::context Boost::fiber Boost::hana Boost::filesystem Boost::system
+      Boost::context
+      Boost::fiber
+      Boost::hana
+      Boost::filesystem
+      Boost::system
     BUILD_EXPORT_SET
       ${PROJECT_NAME}-core-exports
     INSTALL_EXPORT_SET
